@@ -1,6 +1,6 @@
 [package]
 name = "wfir"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["wildanrfq <wildanrfqi@gmail.com>"]
 license = "MIT"
@@ -9,5 +9,7 @@ repository = "https://github.com/danrfq/wfir"
 description = "A Rust wrapper for <https://whichfaceisreal.com> 🎭 🦀"
 
 [dependencies]
+bytes = "1.4"
+futures = "0.3"
 reqwest = {version = "0.11", features = ["blocking"]}
 scraper = "0.16"
