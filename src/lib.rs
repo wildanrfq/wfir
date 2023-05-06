@@ -59,7 +59,7 @@ pub async fn get_faces() -> Faces {
     let urls = data.select(&selector)
         .map(|f| format!("{}/{}", BASE_URL, f.value().attr("src").unwrap()))
         .collect::<Vec<String>>();
-    let answer = if urls[0].contains("real") {
+    let answer = if urls[0].contains("realimages") {
         "left".to_string()
     } else {
         "right".to_string()
